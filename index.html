@@ -10,7 +10,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
-<body class="px-14 py-5 mx-auto bg-slate-100 relative">
+<body class="md:px-14 px-2 py-5 mx-auto bg-slate-100 relative">
     <div id="top"></div>
     <!---------------- Nav Section --------------->
     <nav class="flex justify-between  p-5 items-center bg-white  rounded-lg shadow-lg ">
@@ -29,25 +29,25 @@
         </div>
     </nav>
     <!-------------------------- Main Section  --------------------------->
-    <main class="grid grid-cols-[2.5fr_1fr] gap-5 bg-white p-5 mt-4">
+    <main class="md:grid lg:grid md:grid-cols-[2.5fr_1fr] lg:grid-cols-[2.5fr_1fr] flex flex-col-reverse gap-5 bg-white p-5 mt-4">
         <!-- Frist Culom -->
         <div class="flex flex-col gap-3">
 
             <!-- Task / heading Section  -->
-            <section id="task" class="grid grid-cols-[200px_1fr_200px] gap-4 border-dotted border-b-1 pb-5">
-                <div id="task-assign" class="bg-slate-100 p-4 flex items-center h-36 rounded-lg gap-2">
+            <section id="task" class="grid  lg:grid-cols-[200px_1fr_200px] grid-cols-2 gap-4 border-dotted border-b-1 pb-5">
+                <div id="task-assign" class="bg-slate-100 p-4 order-2 flex items-center h-36 rounded-lg gap-2">
                     <div class="p-3 rounded-full bg-white"><img class="w-5 h-5" src="assets/checkbox.png" alt=""></div>
-                    <div>
+                    <div class="">
                         <p>Task Assiged</p>
                         <h1 class="font-bold text-xl" id="tasknumber">6</h1>
                     </div>
                 </div>
                 <div id="calander"
-                    class="bg-slate-100 p-4 flex justify-center items-center h-36 rounded-lg gap-2 bg-linear-to-r from-blue-500 to-blue-800">
+                    class="bg-slate-100 p-4 flex justify-center col-span-2 lg:col-span-1 order-1 md:order-2  items-center h-36 rounded-lg gap-2 bg-linear-to-r from-blue-500 to-blue-800">
                     <img src="assets/board.png" alt="">
                     <p class="text-2xl font-semibold text-white 0">Discover Somthing New Today!</p>
                 </div>
-                <div id="date" class="bg-slate-100 p-4 flex items-center h-36 rounded-lg gap-2">
+                <div id="date" class="bg-slate-100 p-4 flex items-center h-36 rounded-lg gap-2 order-3 ">
                     <div class="p-2 rounded-full bg-white w-10"><img src="assets/calender.png" alt=""></div>
                     <p><span id="bar">Tue</span> <span id="month">Feb</span> <span id="tarik">25</span> <span
                             id="year">2026</span></p>
@@ -55,7 +55,7 @@
             </section>
 
             <!-- ----------------Card Container Section ------------------- -->
-            <section id="card-container" class="grid grid-cols-3 gap-4 ">
+            <section id="card-container" class="grid md:grid-cols-2 lg:grid-cols-3 grid-cols-1 gap-4 ">
                 <!------ Card-1 ---->
                 <div id="card-1" class="card bg-slate-100 p-5 flex flex-col gap-2 ">
                     <p class="bg-white p-2 rounded-full w-fit text-slate-500 font-semibold">Shop ease</p>
