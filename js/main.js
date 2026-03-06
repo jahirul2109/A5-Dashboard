@@ -52,7 +52,7 @@ function conuter(button, card) {        // Take card id and button id
 
     box.appendChild(time);
     box.setAttribute('class', 'box');
-    box.classList.add('shadow-sm', 'p-5', 'navbar', 'flex', 'items-center', 'justify-between', 'font-bold');
+    box.classList.add('shadow-sm', 'py-5', 'navbar', 'flex', 'items-center', 'justify-between', 'font-bold');
     boxConatainer.classList.add('flex', 'flex-col', 'gap-5', 'mt-5');
 
     /**======================== Clear Button ========================= */
