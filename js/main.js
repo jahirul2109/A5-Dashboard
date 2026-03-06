@@ -120,3 +120,8 @@ document.getElementById('them').addEventListener('click', (e) => {
     document.querySelector('body').style.backgroundColor = redomNumber;
 })
 
+/** =================== Blog Section ====================== **/ 
+document.getElementById('calander').addEventListener('click', (e) => {
+    e.preventDefault();
+    window.location.href = 'blog.html';
+})
